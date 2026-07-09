@@ -7,13 +7,13 @@ Personal agent skills, using the same basic layout as `mattpocock/skills`.
 After pushing this repository, install it with:
 
 ```bash
-npx skills@latest add YOUR_USER/YOUR_REPO
+npx skills@latest add promogit/skills
 ```
 
 or:
 
 ```bash
-npx skills@latest add https://github.com/YOUR_USER/YOUR_REPO
+npx skills@latest add https://github.com/promogit/skills
 ```
 
 ## Local Codex Install
