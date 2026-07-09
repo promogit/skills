@@ -34,6 +34,16 @@ Before pushing:
 python3 scripts/validate-structure.py
 ```
 
+## Git Hook
+
+Enable the versioned pre-commit hook once per clone:
+
+```bash
+git config core.hooksPath .githooks
+```
+
+It runs `python3 scripts/validate-structure.py` before each commit.
+
 ## Add A Skill
 
 1. Create `skills/<category>/<skill-name>/SKILL.md`.
