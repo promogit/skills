@@ -6,6 +6,11 @@
       "title": "Writing",
       "description": "Writing workflows and writing discipline.",
       "skills": ["no-slop-fr", "write-technical-docs"]
+    },
+    {
+      "title": "Database",
+      "description": "PostgreSQL diagnostics and production safety.",
+      "skills": ["postgre-survival"]
     }
   ]
 }

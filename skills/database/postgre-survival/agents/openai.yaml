@@ -1,0 +1,4 @@
+interface:
+  display_name: "PostgreSQL Survival"
+  short_description: "Diagnostiquer et renforcer PostgreSQL"
+  default_prompt: "Utilise $postgre-survival pour auditer cette requête ou cette base PostgreSQL et proposer un plan d’action sûr."

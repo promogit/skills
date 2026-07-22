@@ -1,6 +1,7 @@
 {
   "skills": [
     "skills/writing/no-slop-fr",
-    "skills/writing/write-technical-docs"
+    "skills/writing/write-technical-docs",
+    "skills/database/postgre-survival"
   ]
 }
