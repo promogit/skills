@@ -13,6 +13,27 @@ description: >
 Garantir que chaque contenu produit sonne comme son auteur, pas comme une IA.
 Appliquer ces règles pendant la rédaction, pas seulement en relecture.
 
+## Compatibilité avec `write-technical-docs`
+
+Pour une documentation technique en français, combiner ce skill avec
+[`write-technical-docs`](../write-technical-docs/SKILL.md).
+
+- Conserver ici les règles de précision, de suppression du jargon creux et de
+  suppression du méta-commentaire.
+- Donner la priorité aux conventions techniques pour les listes de procédures,
+  d’options ou de champs, même lorsqu’elles contiennent trois éléments ou plus.
+- Conserver les structures répétées lorsqu’elles rendent des étapes ou des
+  entrées de référence plus faciles à comparer.
+- Accepter un système, un composant ou un document comme sujet grammatical
+  lorsqu’il exécute ou porte réellement l’action décrite.
+- Conserver les fragments utiles dans les titres, libellés d’interface, cellules
+  de tableau, états et descriptions de paramètres.
+- Conserver le passif lorsqu’il met au premier plan un état ou un résultat et
+  que l’acteur est inconnu, inutile ou déjà établi.
+- Ne jamais sacrifier le sens technique, le code, les identifiants, les liens,
+  les libellés littéraux ou la force d’un mot-clé normatif pour satisfaire une
+  préférence de style.
+
 
 ---
 
@@ -311,7 +332,7 @@ Le texte ne doit pas annoncer sa propre structure.
 - [ ] Un adverbe en -ment collé à un adjectif ? → supprimer
 - [ ] Une construction "pas X, c'est Y" ? → énoncer Y directement
 - [ ] Un objet inanimé qui "émerge" ou "récompense" ? → nommer l'acteur
-- [ ] Une phrase en voix passive ? → sujet en tête
+- [ ] Une phrase en voix passive qui masque une information utile ? → nommer l'acteur
 - [ ] Une liste de trois éléments ? → en garder deux ou reformuler en prose
 - [ ] Un tiret cadratin (—) ? → virgule ou reformulation
 - [ ] Un déclaratif vague ? → nommer la chose précise
