@@ -2,6 +2,14 @@
   "skills": [
     "skills/writing/no-slop-fr",
     "skills/writing/write-technical-docs",
-    "skills/database/postgre-survival"
+    "skills/database/postgre-survival",
+    "skills/promodev/houston-datalist",
+    "skills/promodev/modalites-operation",
+    "skills/promodev/notice-rgpd",
+    "skills/promodev/politique-confidentialite",
+    "skills/promodev/promo-dev-docs",
+    "skills/promodev/promo-dev-xlsx",
+    "skills/promodev/promodev-test-procedure",
+    "skills/promodev/reglement-jeu"
   ]
 }
