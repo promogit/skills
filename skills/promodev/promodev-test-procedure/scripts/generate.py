@@ -1066,7 +1066,8 @@ def build_odr(wb):
     tag.alignment=Alignment(indent=1,vertical="center"); ws.row_dimensions[r].height=20; r+=1
     info=[("Client / Marque","ex. Marque (société)"),("Nom de l'opération","ex. ODR Automne 2026"),
      ("N° opération (idgame)","ex. 999"),("URL de test","ex. https://test.promo.dev/xxxxxxxx"),
-     ("IBAN de test à utiliser","ex. FR7630001007941234567890185"),("E-mail de test","ex. prenom.nom+test@domaine.fr"),
+     ("IBAN de test à utiliser","ex. FR7630001007941234567890185"),("IBAN de test non français (zone SEPA)","ex. DE89370400440532013000"),
+     ("E-mail de test","ex. prenom.nom+test@domaine.fr"),
      ("Type de justificatif attendu","ex. ticket de caisse / facture (PDF, JPG, PNG)"),("Montant du remboursement","ex. 10 €"),
      ("Dédoublonnage paramétré","ex. 1 participation / e-mail + IBAN"),("Dates de l'offre","ex. 10/10/2026 → 30/11/2026"),
      ("Testeur(s) côté client","ex. Prénom Nom"),("Contact Promo.dev (chef de projet)","ex. prenom@promo.dev"),
@@ -1211,6 +1212,7 @@ def build_odr(wb):
      ("Justificatif","Upload d'un justificatif valide (PDF/JPG/PNG)","Le fichier est accepté et visible dans le récap"),
      ("Justificatif","Upload d'un format/poids non autorisé","Message d'erreur, fichier refusé"),
      ("IBAN / RIB","Saisie de l'IBAN de test (valide)","L'IBAN est accepté"),
+     ("IBAN / RIB","Saisie de l'IBAN de test non français (zone SEPA, ex. DE ou IT)","L'IBAN est accepté : aucune restriction à la France"),
      ("IBAN / RIB","Saisie d'un IBAN invalide","Message d'erreur, blocage de la validation"),
      ("Consentements","Case CGU / RGPD non cochée","Impossible de valider tant que le consentement obligatoire n'est pas donné"),
      ("Validation","Récapitulatif avant envoi","Les données saisies sont exactes et modifiables"),

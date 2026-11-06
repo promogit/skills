@@ -23,7 +23,7 @@ Ce skill couvre les **jeux France, soumis au droit français**. Les déclinaison
 
 Elles s'appliquent à **tout** règlement : ceux que Promodev rédige, ceux que le client ou son agence rédigent, ceux qui reviennent annotés. Un document « VDEF » n'en est pas dispensé — les exemples validés en circulation ne les respectent pas tous.
 
-Un manquement à R1, R2 ou R3 est **bloquant** (sauf les points d'adresse DPO, qui sont de simples alertes) : le signaler en tête du message, proposer la correction en suivi des modifications avec un commentaire qui explique la règle, et ne pas présenter le document comme prêt à déposer tant qu'il n'est pas corrigé ou que le chef de projet n'a pas décidé autrement.
+Un manquement à R1, R2, R3 ou R5 est **bloquant** (sauf les points d'adresse DPO, qui sont de simples alertes) : le signaler en tête du message, proposer la correction en suivi des modifications avec un commentaire qui explique la règle, et ne pas présenter le document comme prêt à déposer tant qu'il n'est pas corrigé ou que le chef de projet n'a pas décidé autrement.
 
 ### R1. Marque responsable de traitement, agence et Promodev sous-traitants, DPO du client
 
@@ -87,6 +87,21 @@ Le sens du contrôle dépend du moment :
 
 - **opération pas encore montée** (cas normal en V1) : le règlement est la source. Il décrit ce qui devra être paramétré — dates, nombre d'instants gagnants, lots, champs du formulaire. Rien à comparer, mais tout à écrire précisément, puisque le paramétrage en découlera ;
 - **opération déjà montée** (reconduction, duplication, relecture tardive) : comparer le texte à `operation_gains` et `operation_info` (§9) et lister les écarts. Le règlement validé fait foi : signaler pour que le paramétrage soit repris, ne pas trancher seule.
+
+### R5. Dotation versée par virement : compte de la zone SEPA, jamais « IBAN français »
+
+Quand une dotation est versée par virement, le règlement accepte les IBAN de la **zone SEPA**, pas seulement les IBAN français. Fondement : article 9 du règlement (UE) n° 260/2012 (règlement SEPA), qui interdit au payeur d'imposer le pays du compte du bénéficiaire dès lors que ce compte est joignable par virement SEPA. En France, le refus d'un IBAN étranger est sanctionné (amende jusqu'à 375 000 € pour une personne morale, contrôles DGCCRF). Aucun surcoût pour Promodev.
+
+- Ne jamais écrire, ni laisser, « IBAN français », « IBAN commençant par FR », « compte bancaire domicilié en France » ou toute formulation équivalente qui restreint le versement du gain à un compte en France.
+- Formulation type pour l'article Dotations (adaptée au jeu : il n'y a pas de remboursement, mais un versement) :
+  > Le gagnant recevra un e-mail l'invitant à renseigner ses coordonnées bancaires (IBAN/BIC d'un compte situé dans la zone SEPA). Le versement du gain sera effectué par virement bancaire sur ce compte, à l'exclusion de tout autre mode de remise, dans un délai de {4 à 6} semaines après validation de sa participation.
+- **Contrôle inverse** : tout règlement, brief ou formulaire qui restreint le versement à un IBAN FR est un manquement à signaler et à corriger. Si le client demande d'ajouter une restriction à la France, ne pas l'appliquer : le signaler au chef de projet avec le fondement ci-dessus.
+- Ne jamais signaler comme anomalie un règlement ou un formulaire qui accepte les IBAN étrangers.
+- **Dans Houston**, le champ IBAN (formulaire de réclamation du gain, ou formulaire de participation si l'IBAN y est demandé) porte un tag **SEPA**, appliqué par défaut à sa création : c'est le réglage à conserver. Ne jamais le remplacer par le tag FR, et ne jamais signaler l'absence de restriction française comme une anomalie. Signaler au contraire un champ IBAN restreint à FR.
+
+Codes pays IBAN acceptés (37 préfixes) : AD, AT, BE, BG, CH, CY, CZ, DE, DK, EE, ES, FI, FR, GB, GI, GR, HR, HU, IE, IS, IT, LI, LT, LU, LV, MC, MT, NL, NO, PL, PT, RO, SE, SI, SK, SM, VA. Les DOM, Açores, Canaries et îles anglo-normandes sont couverts : leurs IBAN commencent par FR, PT, ES ou GB.
+
+**Ce qui ne change pas.** Le périmètre du jeu reste libre : on peut toujours le réserver aux personnes résidant en France métropolitaine, ou exiger un achat dans un point de vente en France. Seul le pays de la banque ne peut pas être imposé. Le règlement formule ces deux règles **séparément** (conditions de participation d'un côté, versement du gain de l'autre).
 
 ## 1. Identifier la situation
 
@@ -297,7 +312,7 @@ Selon la nature, ajouter :
 - **séjour / voyage** : inclus et exclus (transport, repas, assurances, taxes de séjour), période de réservation et exclusions, délai de réservation, titres d'identité et formalités à la charge du gagnant, conséquence d'une indisponibilité, prestataire qui organise le voyage (à citer comme destinataire des données) ;
 - **carte cadeau dématérialisée** : forme (« un code à 14 caractères »), validité, caractère nominatif, non remboursable ;
 - **bon de réduction / webcoupon** : §4.2 ;
-- **virement** : e-mail pour renseigner l'IBAN, **IBAN commençant par « FR »** (27 caractères : FR + 25), délai de 4 à 6 semaines après validation ;
+- **virement** : e-mail pour renseigner l'IBAN/BIC d'un **compte situé dans la zone SEPA** (formulation type R5, jamais « IBAN commençant par FR »), versement à l'exclusion de tout autre mode de remise, délai de 4 à 6 semaines après validation ;
 - **colis** : adresse du formulaire, délai (2 à 6 semaines), pas de seconde livraison en cas d'adresse erronée, date butoir au-delà de laquelle la dotation est réputée refusée ;
 - **dotation liée à une souscription** (télécom, automobile) : conditions, incompatibilités, conséquence d'une résiliation, remise par un tiers ;
 - **stock** : « dans la limite des stocks disponibles » seulement si le client le demande.
@@ -462,9 +477,10 @@ Lire `read_houston_guide` section `operation-dates` avant de conclure sur une é
 - Lots, nom, dates, site, étude, DPO, raison sociale ou produits d'une autre opération.
 - Année précédente : tarif postal, dates de l'édition précédente, capital social périmé.
 - « Huissier de justice » au lieu de « commissaire de justice », ou la SCP SYNERGIE au 13006 (R3).
+- Restriction « IBAN français » / « IBAN commençant par FR » héritée d'un ancien règlement : à corriger (R5).
 
 **Exactitude**
-- IBAN France : « FR » + 25 caractères, soit 27. « IBAN commençant par FR (25 caractères) » est faux.
+- IBAN : zone SEPA (R5), jamais France uniquement. Signaler (bloquant) toute restriction à un IBAN FR, et tout champ IBAN Houston restreint au tag FR au lieu du tag SEPA ; ne pas signaler l'acceptation d'IBAN étrangers. Si le règlement donne le format de l'IBAN, il varie selon le pays (FR : 27 caractères, DE : 22, IT : 27…) : ne pas écrire de longueur unique.
 - RCS = SIREN à 9 chiffres ; EAN = 13 chiffres.
 - Annexe produits : nombre de lignes = fichier source, pas de doublon, montants et libellés identiques à la liste Houston si elle existe.
 - Coquilles récurrentes : « force majeure », « jours calendaires », « personnes physiques majeures », « Règlement (UE) 2016/679 », « instants gagnants » au pluriel.

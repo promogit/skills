@@ -19,7 +19,7 @@ Les modalités sont le document contractuel entre la **marque organisatrice** et
 
 Ces règles s'appliquent à **tout** document de modalités : ceux que Promodev rédige, ceux que le client rédige lui-même et ceux qui reviennent du client après relecture. Un document validé (« DEF ») n'en est pas dispensé. Les modèles historiques ne les respectent pas toujours : ne jamais recopier une clause d'un ancien document sans la vérifier.
 
-Un manquement est **bloquant** (sauf les points sur l'adresse DPO, qui sont de simples alertes : voir R1) : le signaler en tête du message, proposer la correction en suivi des modifications avec un commentaire qui explique la règle, et ne pas présenter le document comme prêt à valider tant qu'il n'est pas corrigé ou que le chef de projet n'a pas décidé autrement.
+Un manquement à R1, R2 ou R3 est **bloquant** (sauf les points sur l'adresse DPO, qui sont de simples alertes : voir R1) : le signaler en tête du message, proposer la correction en suivi des modifications avec un commentaire qui explique la règle, et ne pas présenter le document comme prêt à valider tant qu'il n'est pas corrigé ou que le chef de projet n'a pas décidé autrement.
 
 ### R1. Client responsable de traitement, Promodev sous-traitant, DPO du client
 
@@ -57,6 +57,22 @@ Les modalités ne doivent jamais demander au participant d'**entourer**, surlign
 - Rechercher dans le texte : `entour`, `surlign`, `encadr`, `cercl`, `stabilo`, `marqu`, `souligne` (dans une consigne donnée au participant).
 - Remplacer par une formulation qui dit ce qui doit **figurer** sur le justificatif, par exemple : « une photo ou un scan lisible du ticket de caisse ou de la facture d'achat, sur lequel doivent figurer la date d'achat, le libellé et/ou la référence du produit éligible et son prix ».
 - Si le client demande d'ajouter une consigne pour entourer les informations, ne pas l'appliquer : le signaler au chef de projet.
+
+### R3. Remboursement par virement : compte de la zone SEPA, jamais « IBAN français »
+
+Toute opération qui verse un remboursement par virement accepte les IBAN de la **zone SEPA**, pas seulement les IBAN français. Fondement : article 9 du règlement (UE) n° 260/2012 (règlement SEPA), qui interdit au payeur d'imposer le pays du compte du bénéficiaire dès lors que ce compte est joignable par virement SEPA. En France, le refus d'un IBAN étranger est sanctionné (amende jusqu'à 375 000 € pour une personne morale, contrôles DGCCRF). Aucun surcoût pour Promodev : un virement SEPA en euros coûte le même prix qu'un virement national.
+
+- Ne jamais écrire, ni laisser, « IBAN français », « compte bancaire domicilié en France », « IBAN commençant par FR », « RIB français » ou toute formulation équivalente qui restreint le remboursement à un compte en France.
+- Formulation type pour l'article Modalités de remboursement :
+  > Le remboursement sera effectué par virement bancaire sur un compte situé dans la zone SEPA (IBAN/BIC), à l'exclusion de tout autre mode de remboursement.
+- Dans les étapes de participation : « vos coordonnées bancaires (IBAN et BIC d'un compte situé dans la zone SEPA) ». Pas de liste de pays dans le document consommateur.
+- **Contrôle inverse** : toute modalité, tout brief ou tout formulaire qui restreint le remboursement à un IBAN FR est un manquement à signaler et à corriger. Si le client demande d'ajouter une restriction à la France, ne pas l'appliquer : le signaler au chef de projet avec le fondement ci-dessus.
+- Ne jamais signaler comme anomalie une modalité ou un formulaire qui accepte les IBAN étrangers.
+- **Dans Houston**, le champ IBAN porte un tag **SEPA** (en plus des tags pays FR, etc.), appliqué par défaut à sa création : c'est le réglage à conserver. Ne jamais le remplacer par le tag FR, et ne jamais signaler l'absence de restriction française comme une anomalie. Signaler au contraire un champ IBAN restreint à FR.
+
+Codes pays IBAN acceptés (37 préfixes, à utiliser tels quels dans les contrôles) : AD, AT, BE, BG, CH, CY, CZ, DE, DK, EE, ES, FI, FR, GB, GI, GR, HR, HU, IE, IS, IT, LI, LT, LU, LV, MC, MT, NL, NO, PL, PT, RO, SE, SI, SK, SM, VA. Les DOM, Açores, Canaries et îles anglo-normandes sont couverts : leurs IBAN commencent par FR, PT, ES ou GB.
+
+**Ce qui ne change pas.** Le périmètre territorial de l'offre reste libre : on peut toujours exiger un achat dans un point de vente participant en France, une adresse en France ou une résidence en France. Seul le pays de la banque ne peut pas être imposé. Les modalités doivent formuler ces deux règles **séparément** (territoire de l'offre d'un côté, compte de remboursement de l'autre), sans les mélanger dans une même phrase. La limite « un remboursement par foyer (même nom, même adresse, même IBAN/BIC) » reste inchangée.
 
 ## 1. Identifier la situation
 
@@ -97,7 +113,7 @@ Récupérer d'abord ce qui existe déjà, pour ne demander que ce qui manque :
 | Participation par courrier | Oui/non. Adresse : `<Nom opération> – Promodev N°… – BP 82110 – 13847 Vitrolles Cedex` |
 | Site de l'offre, e-mail de contact | URL exacte ; formulaire « Contact » du site |
 | Données personnelles | Raison sociale et adresse du responsable de traitement (la Société Organisatrice), adresse DPO du client (`dpo@promo.dev` seulement en cas de délégation écrite confirmée : R1), durée de conservation, base légale (exécution du contrat ou consentement : c'est au client de trancher), opt-ins newsletter, lien vers la politique de confidentialité |
-| Mode de remboursement | Virement (IBAN), paiement express 72 h, Promocard, carte carburant ou bon d'achat (§4.1 E) |
+| Mode de remboursement | Virement (IBAN zone SEPA : R3), paiement express 72 h, Promocard, carte carburant ou bon d'achat (§4.1 E) |
 | Prime (offres à primes, §6) | Nature exacte, valeur TTC indicative, prime au choix ou non, stock ou quota, mode et délai d'envoi, conditions d'utilisation (cartes) |
 | Délai de remboursement | 6 à 8 semaines par défaut ; « 4 à 6 semaines » ou « 1 à 8 semaines » selon les clients |
 | Régularisations | 3 au maximum par dossier ; délai éventuel de 14 jours par demande |
@@ -173,7 +189,7 @@ Pour chaque mécanique : ce que les modalités doivent préciser, et une formula
 
 **E. Mode de versement**
 
-28. **Virement bancaire** (IBAN, cas général). Variante **paiement express 72 h** (titre du type « Offre de remboursement 72h … – Virement bancaire ») : reprendre cette formulation validée, qui distingue bien les deux délais :
+28. **Virement bancaire** (IBAN, cas général) : compte de la zone SEPA, avec la formulation type de R3 (« Le remboursement sera effectué par virement bancaire sur un compte situé dans la zone SEPA (IBAN/BIC), à l'exclusion de tout autre mode de remboursement. »), suivie du délai de virement propre à l'opération. Variante **paiement express 72 h** (titre du type « Offre de remboursement 72h … – Virement bancaire ») : reprendre cette formulation validée, qui distingue bien les deux délais :
     > Le traitement de votre participation sera effectué sous 72h ouvrées à compter de la réception de votre dossier et vous recevrez un email vous permettant de suivre son avancement. Le remboursement sera effectué sous 48 à 72h après validation de la participation (délai variable selon les banques). Toute autre forme de remboursement est exclue de l'offre.
     
     Ne jamais écrire « remboursé sous 72h » tout court : le délai total peut aller jusqu'à 72 h ouvrées de traitement puis 48 à 72 h de virement. Ne pas promettre ce délai sur une opération qui n'a pas l'option paiement 72 h dans Houston.
@@ -196,8 +212,8 @@ Dans une ODR, « prime » désigne le remboursement (une prime peut être financ
 ### 4.2 Plan type (style `articles`) : adapter les titres aux autres styles
 
 1. **Organisation de l'offre** : « La société {FORME} {RAISON SOCIALE} (ci-après dénommée « Société Organisatrice »), société enregistrée au R.C.S. {VILLE} sous le numéro {RCS}, dont le siège social est situé {ADRESSE}, organise du {JJ mois AAAA} au {JJ mois AAAA} inclus une offre de remboursement avec obligation d'achat intitulée « {NOM} » (ci-après dénommée « l'offre »). »
-2. **Modalités de participation** : étapes numérotées, reprises du parcours utilisateur (§4.4). Par exemple : 1. Acheter (produit, période, territoire, lieux). 2. Se connecter sur {site} avant le {date} et renseigner : coordonnées complètes (civilité, nom, prénom, e-mail, adresse postale, n° mobile), informations d'achat (date, enseigne), code-barres. 3. Télécharger : preuve d'achat sur laquelle doivent figurer l'enseigne, la date, le prix, la référence du produit et le n° de la preuve (sans demander de les entourer : R2), photo du code-barres à 13 chiffres, RIB avec IBAN commençant par « FR » correspondant aux coordonnées déclarées. 4. Accepter le règlement et le traitement des données en cochant les cases. Puis : « Un e-mail de confirmation d'inscription est envoyé sous 24h. Le suivi de la participation est accessible via l'onglet « Suivi » du site ou le lien dans l'e-mail. »
-3. **Modalités de remboursement** : participation conforme (virement sous N semaines), participation non conforme (e-mail de régularisation, 3 régularisations maximum, délai de 14 jours, date butoir absolue).
+2. **Modalités de participation** : étapes numérotées, reprises du parcours utilisateur (§4.4). Par exemple : 1. Acheter (produit, période, territoire, lieux). 2. Se connecter sur {site} avant le {date} et renseigner : coordonnées complètes (civilité, nom, prénom, e-mail, adresse postale, n° mobile), informations d'achat (date, enseigne), code-barres. 3. Télécharger : preuve d'achat sur laquelle doivent figurer l'enseigne, la date, le prix, la référence du produit et le n° de la preuve (sans demander de les entourer : R2), photo du code-barres à 13 chiffres, RIB (IBAN et BIC d'un compte situé dans la zone SEPA : R3) au nom du participant. 4. Accepter le règlement et le traitement des données en cochant les cases. Puis : « Un e-mail de confirmation d'inscription est envoyé sous 24h. Le suivi de la participation est accessible via l'onglet « Suivi » du site ou le lien dans l'e-mail. »
+3. **Modalités de remboursement** : participation conforme (formulation type R3 : virement sur un compte de la zone SEPA, à l'exclusion de tout autre mode de remboursement, sous N semaines), participation non conforme (e-mail de régularisation, 3 régularisations maximum, délai de 14 jours, date butoir absolue).
 4. **Conditions de participation** : quota, lieux (vendu et expédié par l'enseigne, marketplaces exclues), type de participants (§4.3), personne physique majeure pour les particuliers, non cumulable, 1 remboursement par foyer, preuve d'achat utilisable une seule fois, produit neuf (ni occasion, ni reconditionné, ni exposition), bénéficiaire = acheteur et nom du RIB identique, demandes incomplètes, falsifiées ou raturées nulles, frais de connexion non remboursés, vérifications possibles (identité, domicile), exclusion du personnel et des prestataires si le client le souhaite.
 5. *(Satisfait ou remboursé uniquement)* **Conditions de retour du Produit**
 6. **Acceptation du règlement et accès au règlement** : acceptation entière et sans réserve ; fraude = exclusion définitive et poursuites possibles ; règlement disponible sur {site} rubrique « Modalités ».
@@ -246,7 +262,7 @@ Construire les étapes des modalités dans l'ordre du formulaire :
 - **Connexion** : URL du site, date limite (`date_fin`).
 - **Informations à renseigner** : lister les champs obligatoires en langage consommateur (civilité, nom, prénom, adresse, e-mail, téléphone, statut particulier / professionnel, raison sociale si professionnel, date d'achat, point de vente, produit, quantité, diamètre…). Les champs facultatifs peuvent être omis ou signalés comme tels.
 - **Justificatifs à télécharger** : un point par champ `File` / `MultipleFiles` (`receipt` preuve d'achat, `bar_code` code-barres, `rib`, `id_proof`…), avec ce qui doit y figurer (R2 : jamais « entourer ») et, si utile, les formats acceptés et la taille maximale.
-- **Coordonnées bancaires** : champ `Iban` (et `bic` s'il existe), IBAN France uniquement.
+- **Coordonnées bancaires** : champ `Iban` (et `bic` s'il existe), compte de la zone SEPA (R3). Le champ doit porter le tag SEPA dans Houston ; s'il est restreint à FR, le signaler.
 - **Validation** : cases obligatoires (`opt_in_rules` acceptation des modalités, `opt_in_privacy`), case marketing facultative.
 - **Après validation** : e-mail de confirmation avec lien de suivi, e-mail de régularisation (formulaire UPDATE, nombre de régularisations, date limite `date_fin_regule`), e-mail de validation, virement.
 
@@ -543,7 +559,7 @@ Pour chaque limite, noter ce que disent les modalités, le brief client s'il est
 
 | Limite | Houston (`operation_info`, `list_forms` puis `get_form`, `list_datalists`) |
 |---|---|
-| Territoire | `country`, `langs` de l'opération ; champ Adresse `countries` ; `acceptedCountries` des champs Téléphone et IBAN ; datalist des points de vente (ex. présence de magasins en Corse) |
+| Territoire | `country`, `langs` de l'opération ; champ Adresse `countries` ; `acceptedCountries` du champ Téléphone ; datalist des points de vente (ex. présence de magasins en Corse). Le champ IBAN ne fait **pas** partie du territoire : il doit porter le tag SEPA (R3), quel que soit le territoire de l'offre |
 | Type de participants | champ `user_type` (Particulier / Professionnel), `company_name`, `siret` ; `isOver18` ou `birthdate` |
 | Période | `date_debut` et `date_fin_achat` (= bornes `min`/`max` du champ `buying_date`), `date_fin` (fin des inscriptions), `date_fin_regule` et `missingRegulMaxDays`, `date_fin_reclamation`. Lire `read_houston_guide` section `operation-dates` avant de comparer |
 | Participation | `unique: true` sur `email`, `phone`, `iban`, `receipt_number`, `code_unique`, `imei`, `siret` ; options du champ `quantity` ; nombre d'emplacements produit. Si les modalités annoncent une limite (ex. 1 participation par IBAN) sans `unique` correspondant, l'écrire comme « non paramétré dans le formulaire, peut être contrôlé à la saisie : à confirmer » |
@@ -566,6 +582,7 @@ Le quota « N premières participations » n'est pas lisible de façon sûre via
 - Vocabulaire de jeu dans une ODR : « Jeu », « lot », « gagnant », « dotation », « tirage », « désignation du participant », « modalités de jeu » (y compris dans les libellés du formulaire Houston, ex. case RGPD « gestion du jeu »). Remplacer par offre, remboursement, participation. « Prime » est accepté (§4.1 bis). Exceptions : ODR avec tirage au sort ou instant gagnant (§4.1 n° 21), où ce vocabulaire est normal ; offres à primes, où « dotation » est normal (mais pas « gagnant », « lot », « tirage »).
 - Restes d'ODR dans une offre à primes : « remboursement », « virement », IBAN ou RIB demandé alors que la prime est envoyée (sauf si le client prévoit un versement de remplacement).
 - Nom, dates, enseigne, site ou DPO d'une autre opération ou d'un autre client.
+- Restriction « IBAN français » / « compte domicilié en France » héritée d'anciennes modalités : à corriger (R3).
 - Année précédente (tarif postal, « tarif en vigueur en 2025 »).
 
 **Annexes (§4.5)**
@@ -582,7 +599,7 @@ Le quota « N premières participations » n'est pas lisible de façon sûre via
 - Formulaire dupliqué d'une autre opération : options ou libellés restés sur l'ancien produit ou l'ancien client (ex. options d'une autre marque restées dans le formulaire) : le signaler, la liste liée fait foi.
 
 **Exactitude**
-- **IBAN : France uniquement pour le moment.** Un IBAN français fait 27 caractères : « FR » + 25 caractères. « IBAN commençant par FR (27 caractères) » et « FR suivi de 25 caractères » sont justes ; « IBAN commençant par FR (25 caractères) » est faux. Le BIC fait 8 ou 11 caractères (« 8 à 11 » est imprécis : simple remarque). Si le territoire inclut Monaco (IBAN « MC ») ou un autre pays alors que seuls les IBAN FR sont acceptés, signaler l'incohérence. Dans Houston, vérifier `acceptedCountries: ["FR"]` sur le champ IBAN.
+- **IBAN : zone SEPA (R3), jamais France uniquement.** Signaler (bloquant) toute restriction à un IBAN FR dans les modalités, et tout champ IBAN Houston restreint au tag FR au lieu du tag SEPA. Ne pas signaler l'acceptation d'IBAN étrangers. Si un document donne le format de l'IBAN, il varie selon le pays (FR : 27 caractères, DE : 22, IT : 27…) : ne pas écrire de longueur unique, ou se limiter à « IBAN valide ». Le BIC fait 8 ou 11 caractères (« 8 à 11 » est imprécis : simple remarque). Les restrictions territoriales (achat en France, résidence en France) restent valables et se vérifient séparément.
 - EAN = 13 chiffres. Signaler les codes de 12 chiffres (souvent un UPC ou un 0 perdu par Excel) sans les corriger d'office. IMEI = 15 chiffres.
 - Accords et coquilles courantes : « 60 jours calendaires », « force majeure », « opération promotionnelle intitulée », « participant majeur », « personnes physiques majeures », « Règlement (UE) 2016/679 ».
 - Mentions données : références d'articles de la loi Informatique et Libertés du type « article 38 », « article 40 », « article 40.1 », ou droits énoncés à l'ancienne (« droit de radiation », loi de 1978 sans le RGPD). Elles datent d'avant la refonte de 2018 : proposer une formulation à jour et le signaler pour validation par le DPO du client. Base légale cohérente dans tout le document.
