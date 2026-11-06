@@ -7,6 +7,7 @@ Libellés **communs** à toutes les mécaniques :
 
 ## ODR (`--mechanic ODR`)
 - `IBAN de test à utiliser`  (défaut : `FR7630001007941234567890185`)
+- `IBAN de test non français (zone SEPA)`  (défaut : `DE89370400440532013000` ; variante IT : `IT60X0542811101000000123456`)
 - `Type de justificatif attendu`
 - `Montant du remboursement`
 - `Dates de l'offre`
