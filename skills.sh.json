@@ -22,6 +22,7 @@
       "description": "Documents, conformité et outillage Houston pour les opérations promotionnelles Promodev.",
       "skills": [
         "houston-datalist",
+        "houston-masque-saisie",
         "modalites-operation",
         "notice-rgpd",
         "politique-confidentialite",
